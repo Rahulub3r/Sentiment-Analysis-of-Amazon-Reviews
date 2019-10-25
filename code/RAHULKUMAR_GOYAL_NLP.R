@@ -160,7 +160,7 @@ ui <- shinyUI(navbarPage(theme = shinytheme("united"),"RAHULKUMAR_GOYAL_NLP", fl
               )
 
 server <- function(input,output){
-        reviews <- read_csv('/Users/rahul/Desktop/UTD/After_College/random/github/Sentiment-Analysis-of-Amazon-Reviews/data/FewProducts.csv')
+        reviews <- read_csv('data/FewProducts.csv')
         
         tagremover <- function(htmlstring){
                 return(gsub("<.*?>", "", htmlstring))
@@ -200,7 +200,7 @@ server <- function(input,output){
         x <- dataframe$text1
         
         ########calculating affintties#########
-        afinn <- read.table('/Users/rahul/Desktop/UTD/After_College/random/github/Sentiment-Analysis-of-Amazon-Reviews/data/AFINN-111.txt', sep= "", fill = TRUE, stringsAsFactors = F)
+        afinn <- read.table('data/AFINN-111.txt', sep= "", fill = TRUE, stringsAsFactors = F)
         colnames(afinn) <- c('words', 'score')
         ScoreCalculator <- function(x){
                 return(sum(afinn[afinn$words %in% x, 2]))
