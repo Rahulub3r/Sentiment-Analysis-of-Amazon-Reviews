@@ -6,7 +6,8 @@
 
 ### Tasks
 1. Data Cleaning <br>
-&nbsp;&nbsp;&nbsp;&nbsp;The reviews were clearned using tm package. Cleaning included removal of HTML tags, punctuations, extra spaces and stopwords.
+&nbsp;&nbsp;&nbsp;&nbsp;The reviews were clearned using tm package. <br>
+&nbsp;&nbsp;&nbsp;&nbsp; Cleaning included removal of HTML tags, punctuations, extra spaces and stopwords.
 2. Data Mining<br>
 &nbsp;&nbsp;&nbsp;&nbsp;Frequency tables were built for both the normalized reviews and unnormalized reviews.
 3. Data Visualization<br>
